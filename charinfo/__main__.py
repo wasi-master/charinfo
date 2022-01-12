@@ -1,4 +1,4 @@
-from .core import _bool, CATEGORIES, args, CharacterInfo
+from .core import args, CharacterInfo
 import rich
 from rich.panel import Panel
 from rich.console import Console

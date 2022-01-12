@@ -1,7 +1,7 @@
 import unicodedata
 import argparse
 import re
-from typing import Any, Optional, Callable, List, Dict, Union, TypeVar
+from typing import Any, Callable, List, Union, TypeVar
 from re import Pattern
 
 CATEGORIES = {
@@ -184,7 +184,7 @@ argumentparser.add_argument(
     help="The unicode of the character to print info for (can be used multiple times)",
     action="append",
     default=[],
-    type=regex_arg(re.compile(r"(?:\\u|U\+|&#1|&#x)?(?P<code>[0-9A-Fa-f]{4})")),
+    type=regex_arg(re.compile(r"(?:\\u|U\+|&#1|&#x)?(?P<code>[0-9A-Fa-f]{4})", re.I)),
 )
 argumentparser.add_argument(
     "-d",
