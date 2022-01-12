@@ -99,7 +99,9 @@ COMBINING_CLASSES = {
 T = TypeVar("T", str, bytes)
 
 
-def regex_arg(regex: Pattern, type_: Callable[[str], Any] = str) -> Callable[[str], str]:
+def regex_arg(
+    regex: Pattern, type_: Callable[[str], Any] = str
+) -> Callable[[str], str]:
     def inner(arg: str) -> str:
         match = regex.match(arg)
         if not match:
@@ -170,7 +172,9 @@ class CharacterInfo:
 
 
 argumentparser = argparse.ArgumentParser(description="Print unicode character info")
-argumentparser.add_argument("characters", nargs="?", help="The character(s) to print info for", default=[])
+argumentparser.add_argument(
+    "characters", nargs="?", help="The character(s) to print info for", default=[]
+)
 argumentparser.add_argument(
     "-n",
     "--name",

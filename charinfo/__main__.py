@@ -8,7 +8,11 @@ from rich.theme import Theme
 
 
 class CharacterInfoHighlighter(RegexHighlighter):
-    highlights = [r"(?P<true>True)|(?P<false>False)", r"(?P<entity_prefix>&#|&#x|\\|\\u)", r"(?P<hex_code_prefix>0x)"]
+    highlights = [
+        r"(?P<true>True)|(?P<false>False)",
+        r"(?P<entity_prefix>&#|&#x|\\|\\u)",
+        r"(?P<hex_code_prefix>0x)",
+    ]
     base_style = "char."
 
 
