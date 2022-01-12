@@ -1,5 +1,6 @@
 from .core import args, CharacterInfo
 import rich
+from rich.text import Text
 from rich.panel import Panel
 from rich.console import Console
 from rich.columns import Columns
@@ -22,7 +23,7 @@ console = Console(
             "char.true": "bright_green",
             "char.false": "bright_red",
             "char.entity_prefix": "bright_black",
-            "char.hex_code_prefix": "dim bright_black",
+            "char.hex_code_prefix": "bright_black",
         }
     ),
     highlighter=CharacterInfoHighlighter(),
@@ -59,7 +60,7 @@ def run():
         )
         panels.append(Panel(info, title=f"[bold]{char.name}[/bold]"))
 
-    rich.print(Columns(panels))
+    console.print(Columns(panels))
 
 
 if __name__ == "__main__":
