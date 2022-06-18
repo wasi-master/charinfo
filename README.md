@@ -19,8 +19,6 @@
  <a href="https://github.com/wasi-master/charinfo/pulls?q=is%3Apr+is%3Aopen+sort%3Aupdated-desc"><img alt="GitHub pull requests" src="https://img.shields.io/github/issues-pr-raw/wasi-master/charinfo"></a>
  <a href="https://github.com/wasi-master/charinfo/blob/main/LICENSE"><img alt="License" src="https://img.shields.io/github/license/wasi-master/charinfo"></a>
  <a href="https://pypi.org/project/charinfo/#history"><img alt="Version" src="https://img.shields.io/pypi/v/charinfo"></a>
- <a href="https://keybase.io/wasimaster"><img alt="BTC Address" src="https://img.shields.io/keybase/btc/wasimaster"></a>
- <a href="https://keybase.io/wasimaster"><img alt="ZCash Address" src="https://img.shields.io/keybase/zec/wasimaster"></a>
  <a href="https://github.com/wasi-master/charinfo/commits/main"><img alt="Last commit" src="https://img.shields.io/github/last-commit/wasi-master/charinfo"></a>
  <!-- <img alt="" src="">
  <a href=""><img alt="" src=""></a> -->
