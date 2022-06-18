@@ -14,13 +14,11 @@
  <img alt="Libraries.io dependency status for latest release" src="https://img.shields.io/librariesio/release/pypi/charinfo">
  <img alt="Lines of code" src="https://img.shields.io/tokei/lines/github/wasi-master/charinfo">
  <img alt="Repo size" src="https://img.shields.io/github/repo-size/wasi-master/charinfo">
- <img alt="Code size" src="https://img.shields.io/github/code-size/wasi-master/charinfo">
+ <img alt="Code size" src="https://img.shields.io/github/languages/code-size/wasi-master/charinfo">
  <a href="https://github.com/wasi-master/charinfo/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc"><img alt="GitHub issues" src="https://img.shields.io/github/issues-raw/wasi-master/charinfo"></a>
  <a href="https://github.com/wasi-master/charinfo/pulls?q=is%3Apr+is%3Aopen+sort%3Aupdated-desc"><img alt="GitHub pull requests" src="https://img.shields.io/github/issues-pr-raw/wasi-master/charinfo"></a>
  <a href="https://github.com/wasi-master/charinfo/blob/main/LICENSE"><img alt="License" src="https://img.shields.io/github/license/wasi-master/charinfo"></a>
  <a href="https://pypi.org/project/charinfo/#history"><img alt="Version" src="https://img.shields.io/pypi/v/charinfo"></a>
- <a href="https://keybase.io/wasimaster"><img alt="BTC Address" src="https://img.shields.io/keybase/btc/wasimaster"></a>
- <a href="https://keybase.io/wasimaster"><img alt="ZCash Address" src="https://img.shields.io/keybase/zec/wasimaster"></a>
  <a href="https://github.com/wasi-master/charinfo/commits/main"><img alt="Last commit" src="https://img.shields.io/github/last-commit/wasi-master/charinfo"></a>
  <!-- <img alt="" src="">
  <a href=""><img alt="" src=""></a> -->
