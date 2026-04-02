@@ -145,7 +145,7 @@ class CharacterInfo:
     def __init__(self, char: str):
         # General Data
         self.char = char
-        self.name = unicodedata.name(char)
+        self.name = unicodedata.name(char, "Unknown")
         self.combining = _bool(unicodedata.combining(char))
         self.category = CATEGORIES[unicodedata.category(char)]
         self.is_bidirectional = _bool(unicodedata.bidirectional(char))

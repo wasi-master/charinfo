@@ -33,34 +33,38 @@ console = Console(
 def run():
     panels = []
     for character in args.characters:
-        char = CharacterInfo(character)
-        info = "".join(
-            [
-                f"[green]Character:[/] {char.char}\n"
-                f"[green]Name:[/] {char.name.title()}\n"
-                f"[green]Category:[/] {char.category}\n"
-                f"[green]Combining:[/] {char.combining}\n"
-                f"[green]Is Bidirectional:[/] {char.is_bidirectional}\n"
-                f"[green]Is Mirrored:[/] {char.is_mirrored}\n"
-                "\n"
-                f"[cyan]HTML Entity:[/] {char.html_entity}\n"
-                f"[cyan]HTML Entity (Alternative):[/] {char.html_entity_alt}\n"
-                f"[cyan]CSS Entity:[/] {char.css_entity}\n"
-                f"[cyan]UTF-8 Entity:[/] {char.utf_8_entity}\n"
-                "\n"
-                f"[magenta]UTF-8 Encoding:[/] {char.utf_8_encoding}\n"
-                f"[magenta]UTF-16 Encoding:[/] {char.utf_16_encoding}\n"
-                f"[magenta]UTF-32 Encoding:[/] {char.utf_32_encoding}\n"
-                "\n"
-                f"[yellow]Binary Code:[/] {char.binary_code}\n"
-                f"[yellow]Decimal Code:[/] {char.decimal_code}\n"
-                f"[yellow]Octal Code:[/] {char.octal_code}\n"
-                f"[yellow]Hex Code:[/] {char.hex_code}"
-            ]
-        )
-        panels.append(Panel(info, title=f"[bold]{char.name}[/bold]"))
+        try:
+            char = CharacterInfo(character)
+            info = "".join(
+                [
+                    f"[green]Character:[/] {char.char}\n"
+                    f"[green]Name:[/] {char.name.title()}\n"
+                    f"[green]Category:[/] {char.category}\n"
+                    f"[green]Combining:[/] {char.combining}\n"
+                    f"[green]Is Bidirectional:[/] {char.is_bidirectional}\n"
+                    f"[green]Is Mirrored:[/] {char.is_mirrored}\n"
+                    "\n"
+                    f"[cyan]HTML Entity:[/] {char.html_entity}\n"
+                    f"[cyan]HTML Entity (Alternative):[/] {char.html_entity_alt}\n"
+                    f"[cyan]CSS Entity:[/] {char.css_entity}\n"
+                    f"[cyan]UTF-8 Entity:[/] {char.utf_8_entity}\n"
+                    "\n"
+                    f"[magenta]UTF-8 Encoding:[/] {char.utf_8_encoding}\n"
+                    f"[magenta]UTF-16 Encoding:[/] {char.utf_16_encoding}\n"
+                    f"[magenta]UTF-32 Encoding:[/] {char.utf_32_encoding}\n"
+                    "\n"
+                    f"[yellow]Binary Code:[/] {char.binary_code}\n"
+                    f"[yellow]Decimal Code:[/] {char.decimal_code}\n"
+                    f"[yellow]Octal Code:[/] {char.octal_code}\n"
+                    f"[yellow]Hex Code:[/] {char.hex_code}"
+                ]
+            )
+            panels.append(Panel(info, title=f"[bold]{char.name}[/bold]"))
+        except Exception as e:
+            console.print(f"[red]Error processing character {character!r}: {type(e).__name__}: {e}[/]")
 
-    console.print(Columns(panels))
+    if panels:
+        console.print(Columns(panels))
 
 
 if __name__ == "__main__":
